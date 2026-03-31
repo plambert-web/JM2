@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aide Multi-Services à Domicile</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-decorations">
+    <!-- Illustration maison -->
+    <svg class="decoration-home" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+      <g opacity="0.25">
+        <path d="M50 150 L50 80 L100 40 L150 80 L150 150 Z" fill="#A0826D" stroke="#8B6F47" stroke-width="2"/>
+        <path d="M100 40 L150 80 L150 150 Z" fill="#C4A574"/>
+        <rect x="70" y="95" width="25" height="25" fill="#FFFBF0" stroke="#8B6F47" stroke-width="1"/>
+        <rect x="105" y="95" width="25" height="25" fill="#FFFBF0" stroke="#8B6F47" stroke-width="1"/>
+        <path d="M90 130 L90 150 L110 150 L110 130 Z" fill="#8B6F47"/>
+      </g>
+    </svg>
+
+    <!-- Illustration plante/jardinage -->
+    <svg class="decoration-plant" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+      <g opacity="0.25">
+        <line x1="100" y1="150" x2="100" y2="80" stroke="#8B6F47" stroke-width="3"/>
+        <ellipse cx="85" cy="95" rx="15" ry="20" fill="#A0826D" transform="rotate(-30 85 95)"/>
+        <ellipse cx="115" cy="85" rx="15" ry="20" fill="#C4A574" transform="rotate(30 115 85)"/>
+        <ellipse cx="80" cy="70" rx="18" ry="25" fill="#A0826D" transform="rotate(-45 80 70)"/>
+        <ellipse cx="120" cy="60" rx="18" ry="25" fill="#C4A574" transform="rotate(45 120 60)"/>
+        <ellipse cx="100" cy="50" rx="20" ry="28" fill="#8B6F47"/>
+        <circle cx="100" cy="155" r="12" fill="#8B6F47"/>
+      </g>
+    </svg>
+
+    <!-- Illustration animal/patte -->
+    <svg class="decoration-paw" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+      <g opacity="0.25">
+        <circle cx="100" cy="120" r="25" fill="#A0826D"/>
+        <circle cx="65" cy="60" r="15" fill="#C4A574"/>
+        <circle cx="135" cy="55" r="15" fill="#C4A574"/>
+        <circle cx="50" cy="100" r="14" fill="#8B6F47"/>
+        <circle cx="150" cy="105" r="14" fill="#8B6F47"/>
+      </g>
+    </svg>
+
+    <!-- Illustration outils -->
+    <svg class="decoration-tools" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+      <g opacity="0.25">
+        <rect x="40" y="80" width="120" height="20" rx="5" fill="#A0826D" transform="rotate(-25 100 90)"/>
+        <circle cx="130" cy="80" r="18" fill="none" stroke="#C4A574" stroke-width="3" transform="rotate(-25 100 90)"/>
+        <path d="M60 120 L70 140 L65 145 L55 125 Z" fill="#8B6F47"/>
+        <rect x="80" y="130" width="8" height="25" fill="#8B6F47"/>
+      </g>
+    </svg>
+  </div>
+  <header class="site-header">
+    <div class="container header-grid">
+      <div class="brand">
+        <h1>L'UNIVERS DES SERVICES DE JM</h1>
+        <p class="subtitle">Aide & service à la personne</p>
+        <p>Maintenance, entretien et vigilance du domicile, jardinage, bricolage, et soin des animaux.</p>
+      </div>
+      <input id="nav-toggle" type="checkbox" class="nav-toggle" />
+      <label for="nav-toggle" class="burger" aria-label="Ouvrir le menu"></label>
+      <nav class="nav-menu">
+        <a href="#services">Domicile</a>
+        <a href="#jardinage-bricolage">Jardinage</a>
+        <a href="#animaux">Animaux</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="btn-primary" href="#services">Découvrir nos services</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="services" class="section">      <div class="section-icon">🏠</div>      <h2>1. Maintenance, entretien et vigilance du domicile</h2>
+      <p>Nous plaçons la sécurité et le bon fonctionnement de votre logement au premier plan.</p>
+      <ul>
+        <li>Inspection régulière des installations électriques et plomberie</li>
+        <li>Nettoyage préventif de gouttières, filtres, et zones vulnérables</li>
+        <li>Vérification de serrures, extincteurs et détecteurs de fumée</li>
+        <li>Présence de vigilance lors d’absence prolongée</li>
+        <li>Rapport détaillé avec recommandations de maintenance</li>
+      </ul>
+    </section>
+
+    <section id="jardinage-bricolage" class="section">      <div class="section-icon">🌱</div>      <h2>2. Petits travaux de jardinage et de bricolage</h2>
+      <p>Second objectif : rendre votre espace extérieur et intérieur plus agréable sans gros travaux.</p>
+      <ul>
+        <li>Desherbage, tonte de pelouse, taille de haies</li>
+        <li>Plantation de fleurs, entretien de potagers</li>
+        <li>Montage de meubles, petite réparation, optimisation de rangement</li>
+        <li>Peinture, remplacement de pièces simples, scellage de fuites</li>
+        <li>Aide pour l’installation de systèmes intelligents (domotique simple)</li>
+      </ul>
+    </section>
+
+    <section id="animaux" class="section">
+      <div class="section-icon">🐾</div>
+      <h2>3. Soins et promenades des animaux de compagnie</h2>
+      <p>Troisième volet : le bien-être de votre compagnon à quatre pattes assuré pendant vos absences.</p>
+      <ul>
+        <li>Promenade quotidienne et activités ludiques</li>
+        <li>Nourrissage, hydratation, nettoyage des litières</li>
+        <li>Surveillance de la santé, prise de médicament si besoin</li>
+        <li>Visites à domicile pour animaux de compagnie et NAC</li>
+        <li>Rapports photo/texte à chaque visite</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="section-icon">📞</div>
+      <h2>Contact & Devis rapide</h2>
+      <p>Pour une offre personnalisée, écris-nous ou appelle-nous dès maintenant.</p>
+      <div class="contact-grid">
+        <div><strong>Email :</strong> <a href="mailto:jmlocation@outlook.com">jmlocation@outlook.com</a></div>
+        <div><strong>Téléphone :</strong> <a href="tel:0760237944">0760237944</a></div>
+        <div><strong>Localisation :</strong> 30 kms autour de Angres (Haut de France)</div>
+      </div>
+      <div class="social-links">
+        <a href="https://www.facebook.com/people/JMLocation/100090960886745/?mibextid=wwXIfr&rdid=DzcWGmLn1exvAwdp&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F18SmQgh5FZ%2F%3Fmibextid%3DwwXIfr" target="_blank" rel="noopener noreferrer" title="Facebook">📘 Facebook</a>
+        <a href="https://www.instagram.com/jmlocation" target="_blank" rel="noopener noreferrer" title="Instagram">📸 Instagram</a>
+      </div>
+      <a class="btn-secondary" href="mailto:jmlocation@outlook.com">Envoyer un message</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Aide Multi-Services. Tous droits réservés.</p>
+      <p>Politique de confidentialité - Conditions générales</p>
+    </div>
+  </footer>
+</body>
+</html>
